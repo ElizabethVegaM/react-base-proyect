@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Footer from './Footer'
+import Title from './components/Title/Title';
+import Formulario from './components/Formulario/Formulario';
 
 class App extends Component {
   render() {
-    const names = ['Ismary', 'Ely', 'Violeta', 'Adriana', 'Marcia'];
     return (
       <div>
-        <h1 className="algo">Abajo Angular</h1>
-        <ul>
-          {
-            names.map(element => <li>{element}</li>)
-          }
-        </ul>
-        <Footer />
+        <h1>Hola antiguo</h1>
+        <Title nombre="Ely"/>
+        <Formulario />
       </div>
     );
   }
